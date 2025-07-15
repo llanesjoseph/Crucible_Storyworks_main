@@ -1,0 +1,37 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Stories can only be accessed by their owner.
+    match /stories/{storyId} {
+      allow read, update: if request.auth.uid == resource.data.userId;
+      allow create: if request.auth.uid == request.resource.data.userId;
+      // Deletion is handled by a server action which logs the event.
+      allow delete: if request.auth.uid == resource.data.userId;
+    }
+
+    // Drafts can only be accessed by their owner.
+    match /storyDrafts/{userId} {
+      allow read, write: if request.auth.uid == userId;
+    }
+
+    // Student performance analyses can be created by any authenticated user,
+    // but can only be read or updated by the teacher who created them.
+    match /studentPerformanceAnalyses/{analysisId} {
+      allow read, update: if request.auth.uid == resource.data.teacherId;
+      allow create: if request.auth.uid != null && request.auth.uid == request.resource.data.teacherId;
+    }
+
+    // Anonymized metrics can be written by any authenticated user, but not read or changed from the client.
+    match /anonymizedMetrics/{metricId} {
+        allow create: if request.auth.uid != null;
+        allow read, update, delete: if false;
+    }
+
+    // Audit logs can be created by the user they pertain to, but cannot be read or modified.
+    // This allows for secure, append-only logging from the client via server actions.
+    match /auditLogs/{logId} {
+      allow create: if request.auth.uid != null && request.auth.uid == request.resource.data.userId;
+      allow read, update, delete: if false;
+    }
+  }
+}

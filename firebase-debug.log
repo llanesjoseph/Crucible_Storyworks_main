@@ -1,0 +1,115 @@
+[debug] [2025-07-15T23:23:37.076Z] ----------------------------------------------------------------------
+[debug] [2025-07-15T23:23:37.080Z] Command:       /nix/store/rbdrkcs5kkwpalxcd7c6bnm33lk2955n-nodejs-20.19.0/bin/node /home/user/.global_modules/bin/firebase init
+[debug] [2025-07-15T23:23:37.080Z] CLI Version:   14.10.1
+[debug] [2025-07-15T23:23:37.081Z] Platform:      linux
+[debug] [2025-07-15T23:23:37.081Z] Node Version:  v20.19.0
+[debug] [2025-07-15T23:23:37.081Z] Time:          Tue Jul 15 2025 23:23:37 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-07-15T23:23:37.081Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-15T23:23:37.602Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-15T23:23:37.604Z] > authorizing via signed-in user (llanes.joseph.m@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/user/studio
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-07-15T23:23:47.390Z] Using project from CLI flag: crucible-storyworks-cs6qa
+[debug] [2025-07-15T23:23:47.396Z] No OAuth tokens found
+[debug] [2025-07-15T23:23:47.399Z] No OAuth tokens found
+[debug] [2025-07-15T23:23:47.400Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-15T23:23:47.401Z] > authorizing via signed-in user (llanes.joseph.m@gmail.com)
+[debug] [2025-07-15T23:23:47.405Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/crucible-storyworks-cs6qa [none]
+[debug] [2025-07-15T23:23:47.653Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/crucible-storyworks-cs6qa 200
+[debug] [2025-07-15T23:23:47.654Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/crucible-storyworks-cs6qa {"projectId":"crucible-storyworks-cs6qa","projectNumber":"1058969359946","displayName":"Crucible Storyworks","name":"projects/crucible-storyworks-cs6qa","resources":{"hostingSite":"crucible-storyworks-cs6qa"},"state":"ACTIVE","etag":"1_7c823fba-5a85-4af6-ae3e-2c8e898557cb"}
+[info] i  Using project crucible-storyworks-cs6qa (Crucible Storyworks) 
+[info] 
+=== App Hosting Setup
+[debug] [2025-07-15T23:23:47.670Z] No OAuth tokens found
+[debug] [2025-07-15T23:23:47.670Z] No OAuth tokens found
+[debug] [2025-07-15T23:23:47.671Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-15T23:23:47.671Z] > authorizing via signed-in user (llanes.joseph.m@gmail.com)
+[debug] [2025-07-15T23:23:47.671Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/crucible-storyworks-cs6qa/billingInfo [none]
+[debug] [2025-07-15T23:23:47.801Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/crucible-storyworks-cs6qa/billingInfo 200
+[debug] [2025-07-15T23:23:47.802Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/crucible-storyworks-cs6qa/billingInfo {"name":"projects/crucible-storyworks-cs6qa/billingInfo","projectId":"crucible-storyworks-cs6qa","billingAccountName":"billingAccounts/01A4BE-9B08BC-EC1414","billingEnabled":true}
+[debug] [2025-07-15T23:23:47.806Z] No OAuth tokens found
+[debug] [2025-07-15T23:23:47.807Z] No OAuth tokens found
+[debug] [2025-07-15T23:23:47.809Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-15T23:23:47.809Z] > authorizing via signed-in user (llanes.joseph.m@gmail.com)
+[debug] [2025-07-15T23:23:47.809Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/crucible-storyworks-cs6qa/serviceAccounts/firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-07-15T23:23:47.810Z] >>> [apiv2][(partial)header] POST https://iam.googleapis.com/v1/projects/crucible-storyworks-cs6qa/serviceAccounts/firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com:testIamPermissions x-goog-quota-user=projects/crucible-storyworks-cs6qa
+[debug] [2025-07-15T23:23:47.810Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/crucible-storyworks-cs6qa/serviceAccounts/firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-07-15T23:23:48.137Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/crucible-storyworks-cs6qa/serviceAccounts/firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-07-15T23:23:48.138Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/crucible-storyworks-cs6qa/serviceAccounts/firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-07-15T23:23:48.139Z] No OAuth tokens found
+[debug] [2025-07-15T23:23:48.141Z] No OAuth tokens found
+[debug] [2025-07-15T23:23:48.141Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-15T23:23:48.141Z] > authorizing via signed-in user (llanes.joseph.m@gmail.com)
+[debug] [2025-07-15T23:23:48.142Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/crucible-storyworks-cs6qa/serviceAccounts [none]
+[debug] [2025-07-15T23:23:48.144Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/crucible-storyworks-cs6qa/serviceAccounts {"accountId":"firebase-app-hosting-compute","serviceAccount":{"displayName":"Firebase App Hosting compute service account","description":"Default service account used to run builds and deploys for Firebase App Hosting"}}
+[debug] [2025-07-15T23:23:48.578Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/crucible-storyworks-cs6qa/serviceAccounts 409
+[debug] [2025-07-15T23:23:48.579Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/crucible-storyworks-cs6qa/serviceAccounts [omitted]
+[debug] [2025-07-15T23:23:48.580Z] No OAuth tokens found
+[debug] [2025-07-15T23:23:48.580Z] No OAuth tokens found
+[debug] [2025-07-15T23:23:48.581Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-15T23:23:48.581Z] > authorizing via signed-in user (llanes.joseph.m@gmail.com)
+[debug] [2025-07-15T23:23:48.581Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/crucible-storyworks-cs6qa:getIamPolicy [none]
+[debug] [2025-07-15T23:23:48.744Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/crucible-storyworks-cs6qa:getIamPolicy 200
+[debug] [2025-07-15T23:23:48.745Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/crucible-storyworks-cs6qa:getIamPolicy {"version":1,"etag":"BwY6AAtbTaI=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-1058969359946@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:1058969359946@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-1058969359946@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.developer","members":["serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-1058969359946@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:1058969359946-compute@developer.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-1058969359946@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@crucible-storyworks-cs6qa.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.serviceAgent","members":["serviceAccount:service-1058969359946@gcp-sa-firebaseapphosting.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-fbsvc@crucible-storyworks-cs6qa.iam.gserviceaccount.com","serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:llanes.joseph.m@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-1058969359946@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.serviceUsageConsumer","members":["serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]}]}
+[debug] [2025-07-15T23:23:48.746Z] No OAuth tokens found
+[debug] [2025-07-15T23:23:48.746Z] No OAuth tokens found
+[debug] [2025-07-15T23:23:48.746Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-15T23:23:48.746Z] > authorizing via signed-in user (llanes.joseph.m@gmail.com)
+[debug] [2025-07-15T23:23:48.747Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/crucible-storyworks-cs6qa:setIamPolicy [none]
+[debug] [2025-07-15T23:23:48.747Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/crucible-storyworks-cs6qa:setIamPolicy {"policy":{"version":1,"etag":"BwY6AAtbTaI=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-1058969359946@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:1058969359946@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-1058969359946@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.developer","members":["serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-1058969359946@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:1058969359946-compute@developer.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-1058969359946@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@crucible-storyworks-cs6qa.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.serviceAgent","members":["serviceAccount:service-1058969359946@gcp-sa-firebaseapphosting.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-fbsvc@crucible-storyworks-cs6qa.iam.gserviceaccount.com","serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:llanes.joseph.m@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-1058969359946@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.serviceUsageConsumer","members":["serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2025-07-15T23:23:49.520Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/crucible-storyworks-cs6qa:setIamPolicy 200
+[debug] [2025-07-15T23:23:49.520Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/crucible-storyworks-cs6qa:setIamPolicy {"version":1,"etag":"BwY6ABGSdVQ=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-1058969359946@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:1058969359946@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-1058969359946@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.developer","members":["serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-1058969359946@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:1058969359946-compute@developer.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-1058969359946@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@crucible-storyworks-cs6qa.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.serviceAgent","members":["serviceAccount:service-1058969359946@gcp-sa-firebaseapphosting.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-fbsvc@crucible-storyworks-cs6qa.iam.gserviceaccount.com","serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:llanes.joseph.m@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-1058969359946@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.serviceUsageConsumer","members":["serviceAccount:github-action-1018392850@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com"]}]}
+[info] i  This command links your local project to Firebase App Hosting. You will be able to deploy your web app with `firebase deploy` after setup. 
+[debug] [2025-07-15T23:24:00.625Z] No OAuth tokens found
+[debug] [2025-07-15T23:24:00.625Z] No OAuth tokens found
+[debug] [2025-07-15T23:24:00.626Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-15T23:24:00.626Z] > authorizing via signed-in user (llanes.joseph.m@gmail.com)
+[debug] [2025-07-15T23:24:00.628Z] >>> [apiv2][query] GET https://firebaseapphosting.googleapis.com/v1beta/projects/crucible-storyworks-cs6qa/locations/-/backends 
+[debug] [2025-07-15T23:24:01.091Z] <<< [apiv2][status] GET https://firebaseapphosting.googleapis.com/v1beta/projects/crucible-storyworks-cs6qa/locations/-/backends 200
+[debug] [2025-07-15T23:24:01.092Z] <<< [apiv2][body] GET https://firebaseapphosting.googleapis.com/v1beta/projects/crucible-storyworks-cs6qa/locations/-/backends {"backends":[{"name":"projects/crucible-storyworks-cs6qa/locations/us-central1/backends/studio","createTime":"2025-07-08T23:17:26.289163275Z","updateTime":"2025-07-12T09:26:07.628113Z","uri":"studio--crucible-storyworks-cs6qa.us-central1.hosted.app","managedResources":[{"runService":{"service":"projects/1058969359946/locations/us-central1/services/studio"}}],"displayName":"Studio","uid":"8a094398-2705-440f-92bb-fb160ceb0dde","etag":"-vT7SkVH1HEk5noQKrb9w3SMjrHSU64GbrRaPbf_1WY","reconciling":false,"servingLocality":"GLOBAL_ACCESS","serviceAccount":"firebase-app-hosting-compute@crucible-storyworks-cs6qa.iam.gserviceaccount.com","appId":"1:1058969359946:web:53f468d17291aba211f8b3"}]}
+[info] i  === Deploy local source setup 
+[info] ✔  Wrote configuration info to firebase.json 
+[info] i  Writing default settings to apphosting.yaml... 
+[info] i  /home/user/studio/apphosting.yaml is unchanged 
+[info] ✔  Firebase initialization complete! 
+[info] 
+=== Hosting Setup
+[debug] [2025-07-15T23:24:03.442Z] No OAuth tokens found
+[debug] [2025-07-15T23:24:03.443Z] No OAuth tokens found
+[debug] [2025-07-15T23:24:03.443Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-15T23:24:03.443Z] > authorizing via signed-in user (llanes.joseph.m@gmail.com)
+[debug] [2025-07-15T23:24:03.444Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/crucible-storyworks-cs6qa [none]
+[debug] [2025-07-15T23:24:03.598Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/crucible-storyworks-cs6qa 200
+[debug] [2025-07-15T23:24:03.598Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/crucible-storyworks-cs6qa {"projectId":"crucible-storyworks-cs6qa","projectNumber":"1058969359946","displayName":"Crucible Storyworks","name":"projects/crucible-storyworks-cs6qa","resources":{"hostingSite":"crucible-storyworks-cs6qa"},"state":"ACTIVE","etag":"1_7c823fba-5a85-4af6-ae3e-2c8e898557cb"}
+[debug] [2025-07-15T23:24:45.814Z] Error: Command failed: npx --yes create-next-app@"12 - 15.0" -e hello-world hosting --use-npm --ts
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at execSync (node:child_process:963:15)
+    at Object.init (/home/user/.global_modules/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:216:34)
+    at async Object.doSetup (/home/user/.global_modules/lib/node_modules/firebase-tools/lib/init/features/hosting/index.js:109:13)
+    at async init (/home/user/.global_modules/lib/node_modules/firebase-tools/lib/init/index.js:57:13)
+    at async Command.initAction [as actionFn] (/home/user/.global_modules/lib/node_modules/firebase-tools/lib/commands/init.js:198:5)
+[error] 
+[error] Error: An unexpected error has occurred.

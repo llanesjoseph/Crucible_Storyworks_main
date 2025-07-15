@@ -1,0 +1,48 @@
+type User @table {
+  displayName: String!
+  createdAt: Timestamp!
+  email: String
+  photoUrl: String
+}
+
+type Story @table {
+  title: String!
+  description: String
+  genre: String
+  createdAt: Timestamp!
+  updatedAt: Timestamp!
+  isPublic: Boolean!
+  creator: User
+}
+
+type Chapter @table {
+  title: String!
+  content: String!
+  order: Int!
+  createdAt: Timestamp!
+  updatedAt: Timestamp!
+  story: Story
+}
+
+type Character @table {
+  name: String!
+  description: String
+  role: String
+  createdAt: Timestamp!
+  story: Story
+}
+
+type Location @table {
+  name: String!
+  description: String
+  type: String
+  createdAt: Timestamp!
+  story: Story
+}
+
+type Collaboration @table(key: ["collaborator", "story"]) {
+  role: String!
+  createdAt: Timestamp!
+  collaborator: User!
+  story: Story!
+}
