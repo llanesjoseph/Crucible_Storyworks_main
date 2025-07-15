@@ -21,3 +21,5 @@ runConfig:
   # See https://firebase.google.com/docs/app-hosting/configure#secret-parameters
   # - variable: MY_SECRET
   #   secret: mySecretRef
+
+# Forcing a redeploy at: 2024-10-28T14:00:00Z
